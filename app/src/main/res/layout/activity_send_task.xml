@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primarycolor"
+    android:layout_gravity="center_vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        
+        <ImageButton
+            android:id="@+id/btn_back_sendtask"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back_white"/>
+        
+        <Button
+            android:id="@+id/btn_to_addTask"
+            android:layout_width="206dp"
+            android:layout_height="50dp"
+            android:textSize="16sp"
+            android:text="Add Task"
+            android:background="@drawable/button_shape"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="183dp"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_height="527dp"
+        tools:listitem="@layout/item_send_task">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle_12"/>
+
+        <ImageButton
+            android:id="@+id/btn_to_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_home_primarycolor"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_to_myTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_icon_task"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="135dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_to_sendTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_icon"
+            android:layout_marginTop="13dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="235dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_to_logOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_icon_logout"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="335dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

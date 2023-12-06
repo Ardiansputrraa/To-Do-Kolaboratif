@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:background="@color/primarycolor"
+    android:layout_gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangle_16"/>
+
+        <ImageView
+            android:id="@+id/image_view_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_4"/>
+
+        <TextView
+            android:id="@+id/tv_title_task"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Title Task"
+            android:fontFamily="sans-serif-black"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="150dp"/>
+
+        <TextView
+            android:id="@+id/tv_task_for"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="150dp"
+            android:textAlignment="center"
+            android:text="Task : ian@gmail.com"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-black"/>
+
+        <TextView
+            android:id="@+id/tv_deadline_tanggal"
+            android:layout_width="190dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="150dp"
+            android:text="closed : sunday, 9 April 2023"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-black"/>
+
+        <TextView
+            android:id="@+id/tv_deadline_jam"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="150dp"
+            android:textAlignment="center"
+            android:text="11 : 59 PM"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-black"/>
+
+        <TextView
+            android:id="@+id/tv_create_tasK"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="150dp"
+            android:textAlignment="center"
+            android:text="Created by : Full Name"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-black"/>
+
+    </RelativeLayout>
+</LinearLayout>
